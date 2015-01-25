@@ -7,7 +7,8 @@ var m_values = ['/','.-','-...','-.-.','-..','.','..-.','--.','....','..','.---'
 
 var num_curr_page = 0;
 var num_pages = ['<p>Learn Numbers!</p><button onclick="beginNumbers()">Begin</button>',
-                 '<p>Are you excited to learn numbers?</p><button onclick="beginNumbers()">Yes!</button>']
+                 '<p>Now that you have learned all of your letters, it is time to learn numbers!</p><button onclick="beginNumbers()">Cool!</button>',
+                 "<p>Let's start with 1: .----</p><audio controls><source src='http://www.morseresource.com/morse/out/mp-54c55b7e6c449.mp3' type='audio/mpeg'></audio><br><button onclick='beginNumbers()''>NICE!</button>"];
 
 function beginNumbers() {
   var numbers_section = document.getElementById("numbers");
