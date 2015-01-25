@@ -20,3 +20,8 @@ morse.onkeyup = function() {
     english.innerHTML += e_values[m_values.indexOf(temp_arr[i])];
   }
 }
+
+function showStrict() {
+  document.getElementById("strict_transl").style.visibility= "visible" ;
+  document.getElementById("space_transl").style.visibility= "hidden" ;
+}

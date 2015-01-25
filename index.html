@@ -16,15 +16,33 @@
 
   <body onload="">
 
-    <div id="english_to_morse">
-      <textarea id="translation_engl" rows="5" cols="50" placeholder="English"></textarea>
+    <div id = "nav">
+      <button id = "strict_transl_switch" onclick="showStrict();">Main Translator</button>
+      <button id = "space_transl_switch" onclick="showSpace();">Space Translator</button>
     </div>
-    <div id="morse_to_english">
-      <textarea id="translation_morse" rows="5" cols="50" placeholder="Morse"></textarea>
+    <br>
+    <div id = "strict_transl">
+      <div id="english_to_morse">
+        <textarea id="translation_engl" rows="5" cols="50" placeholder="English"></textarea>
+      </div>
+      <div id="morse_to_english">
+        <textarea id="translation_morse" rows="5" cols="50" placeholder="Morse"></textarea>
+      </div>
+      <p>Note: Separate morse code letters with a space. To indicate a space, use /</p>
     </div>
-    <p>Note: Separate morse code letters with a space. To indicate a space, use /</p>
+    <div id="space_transl">
+      <button id = "clear" onclick="textarea.value = ''; current_code = '';">Clear Message</button>
+      <br>
+      <div id="space_to_english">
+        <textarea id="space_morse" rows="5" cols="50" placeholder="Start Spacing!"></textarea>
+      </div>
+      <div id="space_translation">
+      </div>
+    </div>
 
+    </div>
     <script src="js/main_translation.js"></script>
+    <script src="js/space_translation.js"></script>
 
   </body>
 </html>
