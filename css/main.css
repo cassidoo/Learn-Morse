@@ -70,3 +70,9 @@ button:active {
     position: relative;
     top: 1px;
 }
+
+textarea {
+    resize: none;
+    border: 3px solid #44c767;
+    font-size: 16px;
+}
