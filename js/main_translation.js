@@ -8,16 +8,16 @@ var m_values = ['/','.-','-...','-.-.','-..','.','..-.','--.','....','..','.---'
 var num_curr_page = 0;
 var num_pages = ['<p>Learn Numbers!</p><button onclick="beginNumbers()">Begin</button>',
                  '<p>Now that you have learned all of your letters, it is time to learn numbers!</p><button onclick="beginNumbers()">Cool!</button>',
-                '<learn-morse letter="1" morse=".----"></learn-morse><button on-click="beginNumbers()">Next!</button>',
-                 '<learn-morse letter="2" morse="..---"></learn-morse><button on-click="beginNumbers()">Next!</button>',
-                 '<learn-morse letter="3" morse="...--"></learn-morse><button on-click="beginNumbers()">Next!</button>',
-                 '<learn-morse letter="4" morse="....-"></learn-morse><button on-click="beginNumbers()">Next!</button>',
-                 '<learn-morse letter="5" morse="....."></learn-morse><button on-click="beginNumbers()">Next!</button>',
-                 '<learn-morse letter="6" morse="-...."></learn-morse><button on-click="beginNumbers()">Next!</button>',
-                 '<learn-morse letter="7" morse="--..."></learn-morse><button on-click="beginNumbers()">Next!</button>',
-                 '<learn-morse letter="8" morse="---.."></learn-morse><button on-click="beginNumbers()">Next!</button>',
-                 '<learn-morse letter="9" morse="----."></learn-morse><button on-click="beginNumbers()">Next!</button>',
-                 '<learn-morse letter="0" morse="-----"></learn-morse><button on-click="beginNumbers()">Next!</button>'];
+                 '<learn-morse letter="1" morse=".----"></learn-morse><button onclick="beginNumbers()">Next!</button>',
+                 '<learn-morse letter="2" morse="..---"></learn-morse><button onclick="beginNumbers()">Next!</button>',
+                 '<learn-morse letter="3" morse="...--"></learn-morse><button onclick="beginNumbers()">Next!</button>',
+                 '<learn-morse letter="4" morse="....-"></learn-morse><button onclick="beginNumbers()">Next!</button>',
+                 '<learn-morse letter="5" morse="....."></learn-morse><button onclick="beginNumbers()">Next!</button>',
+                 '<learn-morse letter="6" morse="-...."></learn-morse><button onclick="beginNumbers()">Next!</button>',
+                 '<learn-morse letter="7" morse="--..."></learn-morse><button onclick="beginNumbers()">Next!</button>',
+                 '<learn-morse letter="8" morse="---.."></learn-morse><button onclick="beginNumbers()">Next!</button>',
+                 '<learn-morse letter="9" morse="----."></learn-morse><button onclick="beginNumbers()">Next!</button>',
+                 '<learn-morse letter="0" morse="-----"></learn-morse><button onclick="beginNumbers()">Next!</button>'];
 
 function beginNumbers() {
   var numbers_section = document.getElementById("numbers");
