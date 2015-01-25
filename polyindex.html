@@ -53,6 +53,18 @@
             <div layout horizontal center-center fit>
                 <core-animated-pages valueattr="hash" selected="{{route}}" transitions="slide-from-right">
                     <template repeat="{{page in pages}}">
+                        <section hash="mctransl" layout vertical center-center id="vowels">
+                          <p>Translate it Yourself!</p>
+
+
+                          <div id="english_to_morse">
+                            <textarea id="translation_engl" rows="5" cols="50" placeholder="English"></textarea>
+                          </div>
+                          <div id="morse_to_english">
+                            <textarea id="translation_morse" rows="5" cols="50" placeholder="Morse"></textarea>
+                          </div>
+
+                        </section>
                         <section hash="vowels" layout vertical center-center id="vowels">
                             <p>Learn A, E, I, O, U, and Y!</p>
                             <button onclick="">Begin</button>
@@ -92,6 +104,7 @@
         <script>
             var template = document.querySelector('#templ');
             template.pages = [
+                {name: 'Morse Code Translator', hash: 'mctransl', },//CAMI
                 {name: 'Vowels', hash: 'vowels', },//CASS
                 {name: 'S T R N', hash: 'strn'},//CAMI
                 {name: 'H P L F M', hash: 'hplfm'},//CASS

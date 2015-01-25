@@ -1,10 +1,3 @@
-var english = document.getElementById("translation_engl");
-var morse = document.getElementById("translation_morse");
-var temp_arr;
-
-var e_values = [' ','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','1','2','3','4','5','6','7','8','9','0',',','.','?',';',':','/','-',' '];
-var m_values = ['/','.-','-...','-.-.','-..','.','..-.','--.','....','..','.---','-.-','.-..','--','-.','---','.--.','--.-','.-.','...','-','..-','...-','.--','-..-','-.--','--..','.----','..---','...--','....-','.....','-....','--...','---..','----.','-----','--..--','.-.-.-','..--..','-.-.-','---...','-..-.','-....-',''];
-
 var num_curr_page = 0;
 var num_pages = ['<p>Learn Numbers!</p><button onclick="beginNumbers()">Begin</button>',
                  '<p>Now that you have learned all of your letters, it is time to learn numbers!</p><button onclick="beginNumbers()">Cool!</button>',
@@ -67,7 +60,13 @@ function beginSTRN() {
   strn_section.innerHTML = strn_pages[strn_curr_page];
 }
 
-/*
+var english = document.getElementById("translation_engl");
+var morse = document.getElementById("translation_morse");
+var temp_arr;
+
+var e_values = [' ','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','1','2','3','4','5','6','7','8','9','0',',','.','?',';',':','/','-',' '];
+var m_values = ['/','.-','-...','-.-.','-..','.','..-.','--.','....','..','.---','-.-','.-..','--','-.','---','.--.','--.-','.-.','...','-','..-','...-','.--','-..-','-.--','--..','.----','..---','...--','....-','.....','-....','--...','---..','----.','-----','--..--','.-.-.-','..--..','-.-.-','---...','-..-.','-....-',''];
+
 english.onkeyup = function() {
   temp_arr = english.value.split("");
     morse.innerHTML = " ";
@@ -83,12 +82,3 @@ morse.onkeyup = function() {
     english.innerHTML += e_values[m_values.indexOf(temp_arr[i])];
   }
 }
-
-function showStrict() {
-  document.getElementById("strict_transl").style.visibility= "visible" ;
-  document.getElementById("space_transl").style.visibility= "hidden" ;
-  document.getElementById("learning").style.visibility= "hidden" ;
-}
-
-<audio controls><source src="audio/1.mp3" type="audio/mpeg"></audio>
-*/
