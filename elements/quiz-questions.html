@@ -32,3 +32,15 @@
     });
     </script>
 </polymer-element>
+
+<polymer-element name="quiz-section" attributes="letters">
+<!--This will take in an array of letters. -->
+    <template>
+        What is {{letters}} in written morse?
+    </template>
+    <script>
+    Polymer({
+        letters: ["a", "e", "i"],
+    });
+    </script>
+</polymer-element>
