@@ -5,6 +5,21 @@ var temp_arr;
 var e_values = [' ','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','1','2','3','4','5','6','7','8','9','0',',','.','?',';',':','/','-',' '];
 var m_values = ['/','.-','-...','-.-.','-..','.','..-.','--.','....','..','.---','-.-','.-..','--','-.','---','.--.','--.-','.-.','...','-','..-','...-','.--','-..-','-.--','--..','.----','..---','...--','....-','.....','-....','--...','---..','----.','-----','--..--','.-.-.-','..--..','-.-.-','---...','-..-.','-....-',''];
 
+var num_curr_page = 0;
+var num_pages = ['<p>Learn Numbers!</p><button onclick="beginNumbers()">Begin</button>',
+                 '<p>Are you excited to learn numbers?</p><button onclick="beginNumbers()">Yes!</button>']
+
+function beginNumbers() {
+  var numbers_section = document.getElementById("numbers");
+  num_curr_page++;
+  if(num_curr_page >= num_pages.length) {
+    num_curr_page = 0;
+  }
+  numbers_section.innerHTML = " ";
+  numbers_section.innerHTML = num_pages[num_curr_page];
+}
+
+/*
 english.onkeyup = function() {
   temp_arr = english.value.split("");
     morse.innerHTML = " ";
@@ -26,3 +41,4 @@ function showStrict() {
   document.getElementById("space_transl").style.visibility= "hidden" ;
   document.getElementById("learning").style.visibility= "hidden" ;
 }
+*/
