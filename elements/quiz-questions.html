@@ -1,15 +1,17 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <script src="js/main_translation.js"></script>
 
-<polymer-element name="learn-morse" attributes="letter morse">
+<polymer-element name="learn-morse" attributes="letter morse call">
   <template>
     Learning {{letter}}: {{morse}}
-    <br>
+    <br><br>
+    <button onclick="{{call}}">Next!</button>
   </template>
   <script>
   Polymer({
-    letter:['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','1','2','3','4','5','6','7','8','9','0',',','.','?',';',':','/','-'],
+    letter: ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','1','2','3','4','5','6','7','8','9','0',',','.','?',';',':','/','-'],
     morse: ['.-','-...','-.-.','-..','.','..-.','--.','....','..','.---','-.-','.-..','--','-.','---','.--.','--.-','.-.','...','-','..-','...-','.--','-..-','-.--','--..','.----','..---','...--','....-','.....','-....','--...','---..','----.','-----','--..--','.-.-.-','..--..','-.-.-','---...','-..-.','-....-'],
+    call: "",
   });
   </script>
 </polymer-element>
