@@ -24,7 +24,7 @@ function beginNumbers() {
 
 
 var dcgbjk_curr_page = 0;
-var dcgbjk_pages = ['<p>Learn dcgbjk!</p><button onclick="beginDCGBJK()">Begin</button>',
+var dcgbjk_pages = ['<p>Learn DCGBJK!</p><button onclick="beginDCGBJK()">Begin</button>',
                     '<learn-morse letter="D" morse="-.." call="beginDCGBJK()"></learn-morse>',
                     '<learn-morse letter="C" morse="-.-." call="beginDCGBJK()"></learn-morse>',
                     '<learn-morse letter="G" morse="--." call="beginDCGBJK()"></learn-morse>',
@@ -58,6 +58,59 @@ function beginSTRN() {
   }
   strn_section.innerHTML = " ";
   strn_section.innerHTML = strn_pages[strn_curr_page];
+}
+
+
+var vowels_curr_page = 0;
+var vowels_pages = ['<p>Learn STRN!</p><button onclick="beginVowels()">Begin</button>',
+                    '<learn-morse letter="A" morse=".-" call="beginVowels()"></learn-morse>',
+                    '<learn-morse letter="E" morse="." call="beginVowels()"></learn-morse>',
+                    '<learn-morse letter="I" morse=".." call="beginVowels()"></learn-morse>',
+                    '<learn-morse letter="O" morse="---" call="beginVowels()"></learn-morse>',
+                    '<learn-morse letter="U" morse="..-" call="beginVowels()"></learn-morse>',
+                    '<learn-morse letter="Y" morse="-.--" call="beginVowels()"></learn-morse>'];
+
+function beginVowels() {
+  var vowels_section = document.getElementById("vowels");
+  vowels_curr_page++;
+  if(vowels_curr_page >= vowels_pages.length) {
+    vowels_curr_page = 0;
+  }
+  vowels_section.innerHTML = " ";
+  vowels_section.innerHTML = vowels_pages[vowels_curr_page];
+}
+
+var fhlmp_curr_page = 0;
+var fhlmp_pages = ['<p>Learn STRN!</p><button onclick="beginFHLMP()">Begin</button>',
+                   '<learn-morse letter="F" morse="..-." call="beginFHLMP()"></learn-morse>',
+                   '<learn-morse letter="H" morse="...." call="beginFHLMP())"></learn-morse>',
+                   '<learn-morse letter="L" morse=".-.." call="beginFHLMP()"></learn-morse>',
+                   '<learn-morse letter="M" morse="--" call="beginFHLMP()"></learn-morse>',
+                   '<learn-morse letter="P" morse=".--." call="beginFHLMP()"></learn-morse>'];
+
+
+function beginFHLMP() {
+  var fhlmp_section = document.getElementById("fhlmp");
+  fhlmp_curr_page++;
+  if(fhlmp_curr_page >= fhlmp_pages.length) {
+    fhlmp_curr_page = 0;
+  }
+  fhlmp_section.innerHTML = " ";
+  fhlmp_section.innerHTML = fhlmp_pages[fhlmp_curr_page];
+}
+
+var vowels_curr_page = 0;
+var vowels_pages = ['<p>Learn STRN!</p><button onclick="beginVowels()">Begin</button>',
+'<learn-morse letter="Q" morse=".-" call="beginVowels()"></learn-morse>',
+'<learn-morse letter="V" morse="." call="beginVowels)"></learn-morse>',
+'<learn-morse letter="W" morse=".." call="beginVowels()"></learn-morse>',
+'<learn-morse letter="X" morse="---" call="beginVowels()"></learn-morse>',
+'<learn-morse letter="Y" morse="..-" call="beginVowels()"></learn-morse>',
+'<learn-morse letter="Z" morse="-.--" call="beginVowels()"></learn-morse>'];
+
+
+function beginQVWXZ(){
+
 }
 
 var temp_arr;
