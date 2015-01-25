@@ -19,8 +19,11 @@
     <div id = "nav">
       <button id = "strict_transl_switch" onclick="showStrict();">Main Translator</button>
       <button id = "space_transl_switch" onclick="showSpace();">Space Translator</button>
+      <button id = "space_transl_switch" onclick="showLearning();">Learn Morse Code!</button>
+
     </div>
     <br>
+
     <div id = "strict_transl">
       <div id="english_to_morse">
         <textarea id="translation_engl" rows="5" cols="50" placeholder="English"></textarea>
@@ -39,10 +42,26 @@
       <div id="space_translation">
       </div>
     </div>
+    <div id="learning">
+      <button id="key" onclick="keyDisplay();">Morse Code Key &#8657;</button>
+      <div id = "morse_code_key">
+        <p>' ' | A |  B |  C | D | E |  F | G |  H | I |  J | K |  L | M | N | O |  P |  Q | R | S | T | U |  V | W |  X |  Y |  Z |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |   ,  |   .  |   ?  |  ;  |  :   |   / |   -  |</p>
+        <p>'/' |.- |-...|-.-.|-..| . |..-.|--.|....| ..|.---|-.-|.-..| --| -.|---|.--.|--.-|.-.|...| - |..-|...-|.--|-..-|-.--|--..|.----|..---|...--|....-|.....|-....|--...|---..|----.|-----|--..--|.-.-.-|..--..|-.-.-|---...|-..-.|-....-|</p>
 
+      </div>
+      <button id="quiz" onclick="startQuiz();">Start Quiz!</button>
+      <div id = "quiz_block">
+        <div id = "question">
+        </div>
+        <div id = "answer">
+          <textarea id="answer_space" rows="1" cols="100" placeholder="Answer"></textarea>
+        </div>
+        <button id = "next" onclick="quizNext();">Check Answer</button>
+      </div>
     </div>
     <script src="js/main_translation.js"></script>
     <script src="js/space_translation.js"></script>
+    <script src="js/learning.js"></script>
 
   </body>
 </html>

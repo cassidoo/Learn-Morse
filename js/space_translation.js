@@ -39,4 +39,5 @@ textarea.onkeyup = function() {
 function showSpace() {
   document.getElementById("strict_transl").style.visibility= "hidden" ;
   document.getElementById("space_transl").style.visibility= "visible" ;
+  document.getElementById("learning").style.visibility= "hidden" ;
 }

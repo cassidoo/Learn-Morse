@@ -5,3 +5,19 @@
 #space_transl {
   visibility: hidden;
 }
+
+#learning {
+  visibility: hidden;
+}
+
+#morse_code_key {
+  visibility: hidden;
+}
+
+#quiz_block {
+  visibility: hidden;
+}
+
+#answer_space {
+  text-transform: uppercase;
+}

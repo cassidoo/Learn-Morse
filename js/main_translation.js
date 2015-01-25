@@ -24,4 +24,5 @@ morse.onkeyup = function() {
 function showStrict() {
   document.getElementById("strict_transl").style.visibility= "visible" ;
   document.getElementById("space_transl").style.visibility= "hidden" ;
+  document.getElementById("learning").style.visibility= "hidden" ;
 }
