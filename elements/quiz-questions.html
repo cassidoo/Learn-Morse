@@ -1,0 +1,34 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="tap-morse" attributes="letter">
+    <template>
+        Now, tap in morse code the letter {{letter}}.
+    </template>
+    <script>
+    Polymer({
+        letter: "a",
+    });
+    </script>
+</polymer-element>
+
+<polymer-element name="morse-to-letter" attributes="morse">
+    <template>
+        What is {{morse}} as a letter?
+    </template>
+    <script>
+    Polymer({
+        morse: ".-",
+    });
+    </script>
+</polymer-element>
+
+<polymer-element name="letter-to-morse" attributes="letter">
+    <template>
+        What is {{letter}} in written morse?
+    </template>
+    <script>
+    Polymer({
+        letter: "a",
+    });
+    </script>
+</polymer-element>

@@ -1,0 +1,21 @@
+{
+  "name": "ss15-tacobellisgreat",
+  "version": "0.0.0",
+  "homepage": "https://github.com/staticshowdown/ss15-tacobellisgreat",
+  "authors": [
+    "Cassidy and Cami Williams"
+  ],
+  "description": "Learn morse code!",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.4"
+  }
+}
