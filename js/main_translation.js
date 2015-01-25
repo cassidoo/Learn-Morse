@@ -8,7 +8,16 @@ var m_values = ['/','.-','-...','-.-.','-..','.','..-.','--.','....','..','.---'
 var num_curr_page = 0;
 var num_pages = ['<p>Learn Numbers!</p><button onclick="beginNumbers()">Begin</button>',
                  '<p>Now that you have learned all of your letters, it is time to learn numbers!</p><button onclick="beginNumbers()">Cool!</button>',
-                 "<p>Let's start with 1: .----</p><audio controls><source src='http://www.morseresource.com/morse/out/mp-54c55b7e6c449.mp3' type='audio/mpeg'></audio><br><button onclick='beginNumbers()''>NICE!</button>"];
+                '<learn-morse letter="1" morse=".----"></learn-morse>',
+                 '<learn-morse letter="2" morse="..---"></learn-morse>',
+                 '<learn-morse letter="3" morse="...--"></learn-morse>',
+                 '<learn-morse letter="4" morse="....-"></learn-morse>',
+                 '<learn-morse letter="5" morse="....."></learn-morse>',
+                 '<learn-morse letter="6" morse="-...."></learn-morse>',
+                 '<learn-morse letter="7" morse="--..."></learn-morse>',
+                 '<learn-morse letter="8" morse="---.."></learn-morse>',
+                 '<learn-morse letter="9" morse="----."></learn-morse>',
+                 '<learn-morse letter="0" morse="-----"></learn-morse>'];
 
 function beginNumbers() {
   var numbers_section = document.getElementById("numbers");
@@ -18,6 +27,30 @@ function beginNumbers() {
   }
   numbers_section.innerHTML = " ";
   numbers_section.innerHTML = num_pages[num_curr_page];
+}
+
+
+var dcgbjk_curr_page = 0;
+var dcgbjk_pages = ['<p>Learn dcgbjk!</p><button onclick="begindcgbjk()">Begin</button>',
+'<learn-morse letter="1" morse=".----"></learn-morse>',
+'<learn-morse letter="2" morse="..---"></learn-morse>',
+'<learn-morse letter="3" morse="...--"></learn-morse>',
+'<learn-morse letter="4" morse="....-"></learn-morse>',
+'<learn-morse letter="5" morse="....."></learn-morse>',
+'<learn-morse letter="6" morse="-...."></learn-morse>',
+'<learn-morse letter="7" morse="--..."></learn-morse>',
+'<learn-morse letter="8" morse="---.."></learn-morse>',
+'<learn-morse letter="9" morse="----."></learn-morse>',
+'<learn-morse letter="0" morse="-----"></learn-morse>'];
+
+function beginDCGBJK() {
+  var dcgbjk_section = document.getElementById("dcgbjk");
+  dcgbjk_curr_page++;
+  if(dcgbjk_curr_page >= dcgbjk_pages.length) {
+    dcgbjk_curr_page = 0;
+  }
+  dcgbjk_section.innerHTML = " ";
+  dcgbjk_section.innerHTML = dcgbjk_pages[dcgbjk_curr_page];
 }
 
 /*
