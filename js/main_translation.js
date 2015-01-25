@@ -8,16 +8,16 @@ var m_values = ['/','.-','-...','-.-.','-..','.','..-.','--.','....','..','.---'
 var num_curr_page = 0;
 var num_pages = ['<p>Learn Numbers!</p><button onclick="beginNumbers()">Begin</button>',
                  '<p>Now that you have learned all of your letters, it is time to learn numbers!</p><button onclick="beginNumbers()">Cool!</button>',
-                '<learn-morse letter="1" morse=".----"></learn-morse>',
-                 '<learn-morse letter="2" morse="..---"></learn-morse>',
-                 '<learn-morse letter="3" morse="...--"></learn-morse>',
-                 '<learn-morse letter="4" morse="....-"></learn-morse>',
-                 '<learn-morse letter="5" morse="....."></learn-morse>',
-                 '<learn-morse letter="6" morse="-...."></learn-morse>',
-                 '<learn-morse letter="7" morse="--..."></learn-morse>',
-                 '<learn-morse letter="8" morse="---.."></learn-morse>',
-                 '<learn-morse letter="9" morse="----."></learn-morse>',
-                 '<learn-morse letter="0" morse="-----"></learn-morse>'];
+                '<learn-morse letter="1" morse=".----"></learn-morse><button on-click="beginNumbers()">Next!</button>',
+                 '<learn-morse letter="2" morse="..---"></learn-morse><button on-click="beginNumbers()">Next!</button>',
+                 '<learn-morse letter="3" morse="...--"></learn-morse><button on-click="beginNumbers()">Next!</button>',
+                 '<learn-morse letter="4" morse="....-"></learn-morse><button on-click="beginNumbers()">Next!</button>',
+                 '<learn-morse letter="5" morse="....."></learn-morse><button on-click="beginNumbers()">Next!</button>',
+                 '<learn-morse letter="6" morse="-...."></learn-morse><button on-click="beginNumbers()">Next!</button>',
+                 '<learn-morse letter="7" morse="--..."></learn-morse><button on-click="beginNumbers()">Next!</button>',
+                 '<learn-morse letter="8" morse="---.."></learn-morse><button on-click="beginNumbers()">Next!</button>',
+                 '<learn-morse letter="9" morse="----."></learn-morse><button on-click="beginNumbers()">Next!</button>',
+                 '<learn-morse letter="0" morse="-----"></learn-morse><button on-click="beginNumbers()">Next!</button>'];
 
 function beginNumbers() {
   var numbers_section = document.getElementById("numbers");
@@ -31,17 +31,13 @@ function beginNumbers() {
 
 
 var dcgbjk_curr_page = 0;
-var dcgbjk_pages = ['<p>Learn dcgbjk!</p><button onclick="begindcgbjk()">Begin</button>',
-'<learn-morse letter="1" morse=".----"></learn-morse>',
-'<learn-morse letter="2" morse="..---"></learn-morse>',
-'<learn-morse letter="3" morse="...--"></learn-morse>',
-'<learn-morse letter="4" morse="....-"></learn-morse>',
-'<learn-morse letter="5" morse="....."></learn-morse>',
-'<learn-morse letter="6" morse="-...."></learn-morse>',
-'<learn-morse letter="7" morse="--..."></learn-morse>',
-'<learn-morse letter="8" morse="---.."></learn-morse>',
-'<learn-morse letter="9" morse="----."></learn-morse>',
-'<learn-morse letter="0" morse="-----"></learn-morse>'];
+var dcgbjk_pages = ['<p>Learn dcgbjk!</p><button onclick="beginDCGBJK()">Begin</button>',
+                    '<learn-morse letter="D" morse="-.."></learn-morse><button onclick="beginDCGBJK()">Next!</button>',
+                    '<learn-morse letter="C" morse="-.-."></learn-morse><button onclick="beginDCGBJK()">Next!</button>',
+                    '<learn-morse letter="G" morse="--."></learn-morse><button onclick="beginDCGBJK()">Next!</button>',
+                    '<learn-morse letter="B" morse="-..."></learn-morse><button onclick="beginDCGBJK()">Next!</button>',
+                    '<learn-morse letter="J" morse=".---"></learn-morse><button onclick="beginDCGBJK()">Next!</button>',
+                    '<learn-morse letter="K" morse="-.-"></learn-morse><button onclick="beginDCGBJK()">Next!</button>'];
 
 function beginDCGBJK() {
   var dcgbjk_section = document.getElementById("dcgbjk");
@@ -51,6 +47,24 @@ function beginDCGBJK() {
   }
   dcgbjk_section.innerHTML = " ";
   dcgbjk_section.innerHTML = dcgbjk_pages[dcgbjk_curr_page];
+}
+
+
+var strn_curr_page = 0;
+var strn_pages = ['<p>Learn STRN!</p><button onclick="beginSTRN()">Begin</button>',
+                  '<learn-morse letter="S" morse="..."></learn-morse><button onclick="beginSTRN()">Next!</button>',
+                  '<learn-morse letter="T" morse="-"></learn-morse><button onclick="beginSTRN()">Next!</button>',
+                  '<learn-morse letter="R" morse=".-."></learn-morse><button onclick="beginSTRN()">Next!</button>',
+                  '<learn-morse letter="N" morse="-."></learn-morse><button onclick="beginSTRN()">Next!</button>'];
+
+function beginSTRN() {
+  var strn_section = document.getElementById("strn");
+  strn_curr_page++;
+  if(strn_curr_page >= strn_pages.length) {
+    strn_curr_page = 0;
+  }
+  strn_section.innerHTML = " ";
+  strn_section.innerHTML = strn_pages[strn_curr_page];
 }
 
 /*
