@@ -1,10 +1,11 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <script src="js/main_translation.js"></script>
 
-<polymer-element name="learn-morse" attributes="letter morse call">
+<polymer-element name="learn-morse" attributes="letter morse call audnum">
   <template>
     Learning {{letter}}: {{morse}}
     <br><br>
+    <audio controls><source src="audio/{{letter}}.mp3" type="audio/mpeg"></audio>
     <button onclick="{{call}}">Next!</button>
   </template>
   <script>
