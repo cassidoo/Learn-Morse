@@ -51,7 +51,7 @@
                 <core-animated-pages valueattr="hash" selected="{{route}}" transitions="slide-from-right">
                     <template repeat="{{page in pages}}">
                         <section hash="{{page.hash}}" layout vertical center-center>
-
+                          {{page.hash}}
                         </section>
                     </template>
                 </core-animated-pages>
@@ -63,11 +63,12 @@
         <script>
             var template = document.querySelector('#templ');
             template.pages = [
-                {name: 'uno', hash: 'one'},
-                {name: 'dos', hash: 'two'},
-                {name: 'tres', hash: 'three'},
-                {name: 'cuatro', hash: 'four'},
-                {name: 'cinco', hash: 'five'},
+                {name: 'Vowels', hash: 'one'},
+                {name: 'S T R N', hash: 'two'},
+                {name: 'H P L F M', hash: 'three'},
+                {name: 'D C G B J K', hash: 'four'},
+                {name: 'Q V W X Y Z', hash: 'poo'},
+                {name: 'Numbers', hash: 'five'},
             ];
             template.menuItemSelected = function(e, detail, sender) {
                 if (detail.isSelected) {
