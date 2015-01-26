@@ -22,7 +22,6 @@ function beginNumbers() {
   numbers_section.innerHTML = num_pages[num_curr_page];
 }
 
-
 var dcgbjk_curr_page = 0;
 var dcgbjk_pages = ['<p>Learn DCGBJK!</p><button onclick="beginDCGBJK()">Begin</button>',
                     '<learn-morse letter="D" morse="-.." call="beginDCGBJK()"></learn-morse>',
