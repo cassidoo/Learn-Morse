@@ -13,23 +13,42 @@ var num_pages = ['<p>Learn Numbers!</p><button onclick="beginNumbers()">Begin</b
                  '<learn-morse letter="0" morse="-----" call="beginNumbers()"></learn-morse>'];
 
 function beginNumbers() {
-  var numbers_section = document.getElementById("numbers");
-  num_curr_page++;
-  if(num_curr_page >= num_pages.length) {
-    num_curr_page = 0;
-  }
-  numbers_section.innerHTML = " ";
-  numbers_section.innerHTML = num_pages[num_curr_page];
+    var numbers_section = document.getElementById("numbers");
+    num_curr_page++;
+    if(num_curr_page >= num_pages.length) {
+        num_curr_page = 0;
+    }
+    numbers_section.innerHTML = " ";
+    numbers_section.innerHTML = num_pages[num_curr_page];
+}
+
+var vowels_curr_page = 0;
+var vowels_pages = ['<p>Learn Vowels!</p><button onclick="beginVowels()">Begin</button>',
+                    '<learn-morse letter="A" morse=".-"   call="beginVowels()"></learn-morse>',
+                    '<learn-morse letter="E" morse="."    call="beginVowels()"></learn-morse>',
+                    '<learn-morse letter="I" morse=".."   call="beginVowels()"></learn-morse>',
+                    '<learn-morse letter="O" morse="---"  call="beginVowels()"></learn-morse>',
+                    '<learn-morse letter="U" morse="..-"  call="beginVowels()"></learn-morse>',
+                    '<learn-morse letter="Y" morse="-.--" call="beginVowels()"></learn-morse>'];
+
+function beginVowels() {
+    var vowels_section = document.getElementById("vowels");
+    vowels_curr_page++;
+    if(vowels_curr_page >= vowels_pages.length) {
+        vowels_curr_page = 0;
+    }
+    vowels_section.innerHTML = " ";
+    vowels_section.innerHTML = vowels_pages[vowels_curr_page];
 }
 
 var dcgbjk_curr_page = 0;
 var dcgbjk_pages = ['<p>Learn DCGBJK!</p><button onclick="beginDCGBJK()">Begin</button>',
-                    '<learn-morse letter="D" morse="-.." call="beginDCGBJK()"></learn-morse>',
+                    '<learn-morse letter="D" morse="-.."  call="beginDCGBJK()"></learn-morse>',
                     '<learn-morse letter="C" morse="-.-." call="beginDCGBJK()"></learn-morse>',
-                    '<learn-morse letter="G" morse="--." call="beginDCGBJK()"></learn-morse>',
+                    '<learn-morse letter="G" morse="--."  call="beginDCGBJK()"></learn-morse>',
                     '<learn-morse letter="B" morse="-..." call="beginDCGBJK()"></learn-morse>',
                     '<learn-morse letter="J" morse=".---" call="beginDCGBJK()"></learn-morse>',
-                    '<learn-morse letter="K" morse="-.-" call="beginDCGBJK()"></learn-morse>'];
+                    '<learn-morse letter="K" morse="-.-"  call="beginDCGBJK()"></learn-morse>'];
 
 function beginDCGBJK() {
   var dcgbjk_section = document.getElementById("dcgbjk");
@@ -45,9 +64,9 @@ function beginDCGBJK() {
 var strn_curr_page = 0;
 var strn_pages = ['<p>Learn STRN!</p><button onclick="beginSTRN()">Begin</button>',
                   '<learn-morse letter="S" morse="..." call="beginSTRN()"></learn-morse>',
-                  '<learn-morse letter="T" morse="-" call="beginSTRN()"></learn-morse>',
+                  '<learn-morse letter="T" morse="-"   call="beginSTRN()"></learn-morse>',
                   '<learn-morse letter="R" morse=".-." call="beginSTRN()"></learn-morse>',
-                  '<learn-morse letter="N" morse="-." call="beginSTRN()"></learn-morse>'];
+                  '<learn-morse letter="N" morse="-."  call="beginSTRN()"></learn-morse>'];
 
 function beginSTRN() {
   var strn_section = document.getElementById("strn");
@@ -59,32 +78,12 @@ function beginSTRN() {
   strn_section.innerHTML = strn_pages[strn_curr_page];
 }
 
-
-var vowels_curr_page = 0;
-var vowels_pages = ['<p>Learn Vowels!</p><button onclick="beginVowels()">Begin</button>',
-                    '<learn-morse letter="A" morse=".-" call="beginVowels()"></learn-morse>',
-                    '<learn-morse letter="E" morse="." call="beginVowels()"></learn-morse>',
-                    '<learn-morse letter="I" morse=".." call="beginVowels()"></learn-morse>',
-                    '<learn-morse letter="O" morse="---" call="beginVowels()"></learn-morse>',
-                    '<learn-morse letter="U" morse="..-" call="beginVowels()"></learn-morse>',
-                    '<learn-morse letter="Y" morse="-.--" call="beginVowels()"></learn-morse>'];
-
-function beginVowels() {
-  var vowels_section = document.getElementById("vowels");
-  vowels_curr_page++;
-  if(vowels_curr_page >= vowels_pages.length) {
-    vowels_curr_page = 0;
-  }
-  vowels_section.innerHTML = " ";
-  vowels_section.innerHTML = vowels_pages[vowels_curr_page];
-}
-
 var fhlmp_curr_page = 0;
 var fhlmp_pages = ['<p>Learn FHLMP!</p><button onclick="beginFHLMP()">Begin</button>',
                    '<learn-morse letter="F" morse="..-." call="beginFHLMP()"></learn-morse>',
-                   '<learn-morse letter="H" morse="...." call="beginFHLMP())"></learn-morse>',
+                   '<learn-morse letter="H" morse="...." call="beginFHLMP()"></learn-morse>',
                    '<learn-morse letter="L" morse=".-.." call="beginFHLMP()"></learn-morse>',
-                   '<learn-morse letter="M" morse="--" call="beginFHLMP()"></learn-morse>',
+                   '<learn-morse letter="M" morse="--"   call="beginFHLMP()"></learn-morse>',
                    '<learn-morse letter="P" morse=".--." call="beginFHLMP()"></learn-morse>'];
 
 
@@ -98,11 +97,11 @@ function beginFHLMP() {
   fhlmp_section.innerHTML = fhlmp_pages[fhlmp_curr_page];
 }
 
-var vowels_curr_page = 0;
-var vowels_pages = ['<p>Learn QVWXZ!</p><button onclick="beginVowels()">Begin</button>',
+var qvwxz_curr_page = 0;
+var qvwxz_pages = ['<p>Learn QVWXZ!</p><button onclick="beginQVWXZ()">Begin</button>',
                     '<learn-morse letter="Q" morse="--.-" call="beginQVWXZ()"></learn-morse>',
                     '<learn-morse letter="V" morse="...-" call="beginQVWXZ()"></learn-morse>',
-                    '<learn-morse letter="W" morse=".--" call="beginQVWXZ()"></learn-morse>',
+                    '<learn-morse letter="W" morse=".--"  call="beginQVWXZ()"></learn-morse>',
                     '<learn-morse letter="X" morse="-..-" call="beginQVWXZ()"></learn-morse>',
                     '<learn-morse letter="Z" morse="--.." call="beginQVWXZ()"></learn-morse>'];
 
