@@ -62,7 +62,7 @@ function beginSTRN() {
 
 
 var vowels_curr_page = 0;
-var vowels_pages = ['<p>Learn STRN!</p><button onclick="beginVowels()">Begin</button>',
+var vowels_pages = ['<p>Learn Vowels!</p><button onclick="beginVowels()">Begin</button>',
                     '<learn-morse letter="A" morse=".-" call="beginVowels()"></learn-morse>',
                     '<learn-morse letter="E" morse="." call="beginVowels()"></learn-morse>',
                     '<learn-morse letter="I" morse=".." call="beginVowels()"></learn-morse>',
@@ -81,7 +81,7 @@ function beginVowels() {
 }
 
 var fhlmp_curr_page = 0;
-var fhlmp_pages = ['<p>Learn STRN!</p><button onclick="beginFHLMP()">Begin</button>',
+var fhlmp_pages = ['<p>Learn FHLMP!</p><button onclick="beginFHLMP()">Begin</button>',
                    '<learn-morse letter="F" morse="..-." call="beginFHLMP()"></learn-morse>',
                    '<learn-morse letter="H" morse="...." call="beginFHLMP())"></learn-morse>',
                    '<learn-morse letter="L" morse=".-.." call="beginFHLMP()"></learn-morse>',
@@ -100,17 +100,22 @@ function beginFHLMP() {
 }
 
 var vowels_curr_page = 0;
-var vowels_pages = ['<p>Learn STRN!</p><button onclick="beginVowels()">Begin</button>',
-'<learn-morse letter="Q" morse=".-" call="beginVowels()"></learn-morse>',
-'<learn-morse letter="V" morse="." call="beginVowels)"></learn-morse>',
-'<learn-morse letter="W" morse=".." call="beginVowels()"></learn-morse>',
-'<learn-morse letter="X" morse="---" call="beginVowels()"></learn-morse>',
-'<learn-morse letter="Y" morse="..-" call="beginVowels()"></learn-morse>',
-'<learn-morse letter="Z" morse="-.--" call="beginVowels()"></learn-morse>'];
+var vowels_pages = ['<p>Learn QVWXZ!</p><button onclick="beginVowels()">Begin</button>',
+                    '<learn-morse letter="Q" morse="--.-" call="beginQVWXZ()"></learn-morse>',
+                    '<learn-morse letter="V" morse="...-" call="beginQVWXZ()"></learn-morse>',
+                    '<learn-morse letter="W" morse=".--" call="beginQVWXZ()"></learn-morse>',
+                    '<learn-morse letter="X" morse="-..-" call="beginQVWXZ()"></learn-morse>',
+                    '<learn-morse letter="Z" morse="--.." call="beginQVWXZ()"></learn-morse>'];
 
 
 function beginQVWXZ(){
-
+  var qvwxz_section = document.getElementById("qvwxz");
+  qvwxz_curr_page++;
+  if(qvwxz_curr_page >= qvwxz_pages.length) {
+    qvwxz_curr_page = 0;
+  }
+  qvwxz_section.innerHTML = " ";
+  qvwxz_section.innerHTML = qvwxz_pages[qvwxz_curr_page];
 }
 
 var temp_arr;
